@@ -19,6 +19,8 @@ public class ItemServiceImplementation implements ItemService {
         this.repository = repository;
     }
 
+    public ItemServiceImplementation() {}
+
     @Override
     public Item save(Item item) {
         return repository.save(item);
